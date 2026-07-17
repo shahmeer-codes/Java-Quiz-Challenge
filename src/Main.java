@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -37,18 +38,18 @@ public class Main {
             System.out.print("Enter your answer (A/B/C/D): ");
             char choice = Character.toUpperCase(sc.next().charAt(0));
 
-            // Check for invalid input
+        
             if (choice != 'A' && choice != 'B' && choice != 'C' && choice != 'D') {
-                System.out.println("❌ Invalid input! Please enter A, B, C, or D.");
-                i--; // Ask the same question again
+                System.out.println(" Invalid input! Please enter A, B, C, or D.");
+                i--; 
                 continue;
             }
 
             if (choice == answers[i]) {
-                System.out.println("✅ Correct!");
+                System.out.println(" Correct!");
                 score++;
             } else {
-                System.out.println("❌ Wrong!");
+                System.out.println(" Correctct!");
                 System.out.println("Correct Answer: " + answers[i]);
             }
         }
